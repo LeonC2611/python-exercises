@@ -8,7 +8,7 @@ inventory = {
 while True:
     item = input("What would you like to buy? (Apple. Banana, Pear) ")
     item = item.lower()
-    if item == "quit" or item == "Quit":
+    if item == "quit":
         break
     if item not in inventory:
         print("Not a recognised item")
