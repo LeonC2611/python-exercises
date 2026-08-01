@@ -5,17 +5,17 @@ scores = {
     "Dana" : 50
 }
 
-
-for name in scores:
-    if 100 >= scores[name] >= 90:
-        print(f"{name}: {scores[name]} - A")
-    elif 89 >= scores[name] >= 80:
-        print(f"{name}: {scores[name]} - B")
-    elif 79 >= scores[name] >= 70:
-        print(f"{name}: {scores[name]} - C")
-    elif 69 >= scores[name] >= 60:
-        print(f"{name}: {scores[name]} - D")
-    elif 59 >= scores[name] >= 0:
-        print(f"{name}: {scores[name]} - F")
+#.items() grabs both key and value and stores them both in variables (name & score). Better to use than each dictionary lookup for each conditional. This time just refers back to variable.
+for name, score in scores.items():
+    if 100 >= score >= 90:
+        print(f"{name}: {score} - A")
+    elif 89 >= score >= 80:
+        print(f"{name}: {score} - B")
+    elif 79 >= score >= 70:
+        print(f"{name}: {score} - C")
+    elif 69 >= score >= 60:
+        print(f"{name}: {score} - D")
+    elif 59 >= score >= 0:
+        print(f"{name}: {score} - F")
 
         
