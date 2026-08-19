@@ -1,5 +1,6 @@
 # Using import function to import sys module
 import sys
+
 letter_count = {}
 # This loop iterates through the command line argument word to add letters to a dictionary and assign a number based on how many times the letter appeared in the word.
 for letter in sys.argv[1].lower():
